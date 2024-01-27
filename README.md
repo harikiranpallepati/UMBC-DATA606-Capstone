@@ -1,6 +1,6 @@
 ### HARIKIRAN PALLEPATI
 #### JAVA DEVELOPER
-### Contact :
+#### Contact :
 * Email: harikiran.pallepati@gmail.com 
 * Phone: +1 (443)-683-7841
 * https://www.linkedin.com/in/harikiran-pallepati-a37b99167/
