@@ -1,3 +1,4 @@
+![Hari](https://github.com/harikiranpallepati/UMBC-DATA606-Capstone/assets/157790386/3f806c83-9a9b-46b1-a248-c8eb1e3d3d42)
 ### HARIKIRAN PALLEPATI
 #### JAVA DEVELOPER
 #### Contact :
