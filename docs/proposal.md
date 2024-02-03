@@ -8,7 +8,7 @@ Bank churn prediction involves using data and machine learning models to predict
 Datasource : Kaggle
 https://www.kaggle.com/datasets/willianoliveiragibin/bank-churn-prediction
 
-* Size of the dataset is 11MB( 4375700 elements in the dataframe).
+* Size of the dataset is 37MB( 4375700 elements in the dataframe).
 * Customer data in the dataset is without a specific time range.
 * Each row in the dataset likely represents a customer of a bank, with various attributes recorded for each customer
 
