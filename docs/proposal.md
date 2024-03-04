@@ -1,6 +1,6 @@
 # 1. Title and Author
 
-- **Project Title:** Customer Churn Prediction in Banking
+- **Project Title:** Vehicle Insurance Claim Fraud Detection
 - **Prepared for:** UMBC Data Science Master Degree Capstone by Dr. Chaojie (Jay) Wang
 - **Author:** Harikiran Pallepati
 - **GitHub:** https://github.com/harikiranpallepati/
@@ -10,47 +10,61 @@
 
 # 2. Background
 
- Bank churn prediction involves using data and machine learning models to predict whether customers are likely to leave or "churn" from a bank. Customer churn is a 
- critical concern for banks, as retaining existing customers is often more cost-effective than acquiring new ones.The significance of Bank Churn Prediction lies in 
- its direct impact on a bank's financial health and customer relationships. Customer churn not only results in revenue loss but also diminishes the bank's 
- competitive position in the market. By accurately predicting churn, banks can implement targeted retention strategies, improve customer service, and tailor 
- offerings to individual needs, ultimately fostering long-term customer loyalty and financial stability.
+Vehicle insurance fraud involves individuals or groups conspiring to make false or exaggerated claims related to property damage or personal injuries following an accident. This deceptive practice can take various forms, such as staged accidents, phantom passengers claiming injuries who were not present at the scene, and false personal injury claims where injuries are exaggerated.
+
+Insurance fraud can have significant financial implications for insurance companies, leading to increased costs and potentially higher premiums for honest policyholders. Detecting and preventing insurance fraud is crucial for maintaining the integrity of the insurance industry, ensuring fair premiums, and reducing the overall economic impact of fraudulent activities.
 
  **Research Questions:**
-1. What factors contribute to customer churn in the banking industry?
-2. How effectively can machine learning models predict customer churn in the banking sector based on historical data and customer attributes?
-3. What strategies can banks implement to reduce churn and enhance overall customer retention?
+1. What are the most effective methods for detecting potential fraudulent insurance claims?
+2. What are the common indicators or patterns associated with fraudulent claims in the vehicle insurance domain?
 
 # 3. Data
 
 ## Data Source:
 - Source: kaggle
-- Source Link : https://www.kaggle.com/datasets/willianoliveiragibin/bank-churn-prediction
+- Source Link : https://www.kaggle.com/datasets/shivamb/vehicle-claim-fraud-detection/data
 
 ## Data Size
-- Size of the dataset is 37MB( 4375700 elements in the dataframe).
-- It consists of 175028 rows and 25 columns
-- Each row in the dataset likely represents a customer of a bank, with various attributes recorded for each customer
+- Size of the dataset is 3MB.
+- It consists of 15420 rows and 33 columns.
+- Each row in your dataset represents a specific insurance claim. Each claim is associated with a set of attributes or features, capturing various details about the claim, the vehicle involved, the policyholder, and the circumstances surrounding the claim.
 
 ## Data Dictionary
-* Surname: Last name of the customer.
-* CreditScore: The credit score of the customer.
-* Age: Age of the customer.
-* Tenure: Number of years the customer has been with the bank.
-* Balance: Bank balance of the customer.
-* NumOfProducts: Number of bank products the customer is using.
-* HasCrCard: Whether the customer has a credit card (binary, 1 or 0).
-* IsActiveMember: Whether the customer is an active member (binary, 1 or 0).
-* EstimatedSalary: Estimated salary of the customer.
-* Exited: The target variable indicating whether the customer exited (churned) or not (binary, 1 or 0).
-* Surname_tfidf_0 to Surname_tfidf_4: Features representing TF-IDF values for the customer's surname.
-* France, Germany, Spain: Categorical variables indicating the customer's country.
-* Female, Male: Categorical variables indicating the customer's gender.
-* Mem__no__Products: A combination of membership and number of products.
-* Cred_Bal_Sal: A derived feature combining credit score, balance, and salary.
-* Bal_sal: A derived feature combining balance and salary.
-* Tenure_Age, Age_Tenure_product: Derived features.
+* Month: The month in which the accident occurred.
+* WeekOfMonth: The week of the month in which the accident occurred.
+* DayOfWeek: The day of the week on which the accident occurred.
+* Make: The make (brand) of the vehicle involved in the accident.
+* AccidentArea: Whether the accident occurred in an urban or rural area.
+* DayOfWeekClaimed: The day of the week on which the claim was filed.
+* MonthClaimed: The month in which the claim was filed.
+* WeekOfMonthClaimed: The week of the month in which the claim was filed.
+* Sex: The gender of the policyholder.
+* MaritalStatus: The marital status of the policyholder.
+* Age: The age of the policyholder.
+* Fault: Indicates whether the policyholder was at fault in the accident.
+* PolicyType: The type of insurance policy associated with the claim.
+* VehicleCategory: Category or type of the vehicle.
+* VehiclePrice: Price category of the vehicle.
+* FraudFound_P: The target variable indicating whether the claim is fraudulent (1) or not (0).
+* PolicyNumber: Unique identifier for the insurance policy.
+* RepNumber: Identifier for the insurance representative.
+* Deductible: Deductible amount associated with the claim.
+* DriverRating: Rating of the driver associated with the policy.
+* Days_Policy_Accident: Time period between policy issuance and the accident.
+* Days_Policy_Claim: Time period between policy issuance and filing the claim.
+* PastNumberOfClaims: Number of past claims made by the policyholder.
+* AgeOfVehicle: Age category of the vehicle.
+* AgeOfPolicyHolder: Age group of the policyholder.
+* PoliceReportFiled: Whether a police report was filed for the accident.
+* WitnessPresent: Whether there were witnesses present during the accident.
+* AgentType: Type of insurance agent associated with the claim.
+* NumberOfSuppliments: Number of supplementary insurance policies.
+* AddressChange_Claim: Change in address associated with the claim.
+* NumberOfCars: Number of cars covered by the policy.
+* Year: The year of the policy.
+* BasePolicy: The base type of insurance policy.
+
 
 ## Target variable
-The numerical column named 'Exited' column in the dataframe is our target variable which indicates whether customer will churn or not. The binary representation as follows churn(1) or not (0).
+The target variable, named FraudFound_P, indicates whether a claim application is fraudulent (1) or not (0).
 
